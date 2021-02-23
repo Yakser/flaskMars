@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>430</width>
+    <height>535</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="image">
+     <property name="text">
+      <string>image</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_2">
+     <property name="font">
+      <font>
+       <family>AA_Valken</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Название</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="name">
+     <property name="font">
+      <font>
+       <family>AA_Valken</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>название</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_4">
+     <property name="font">
+      <font>
+       <family>AA_Valken</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Автор</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="author">
+     <property name="font">
+      <font>
+       <family>AA_Valken</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>автор</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_5">
+     <property name="font">
+      <font>
+       <family>AA_Valken</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Жанр</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="genre">
+     <property name="font">
+      <font>
+       <family>AA_Valken</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>жанр</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
