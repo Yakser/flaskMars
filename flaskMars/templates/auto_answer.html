@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for field in data %}
+    {% if not loop.first %}
+        <p>{{data[field][0] + data[field][1] }}</p>
+    {% endif %}
+
+{% endfor %}
+{% endblock %}

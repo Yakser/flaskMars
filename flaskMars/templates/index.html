@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Works log</h1>
+    {% for item in jobs %}
+        <h2>Action # {{ item.id }}</h2>
+        <table>
+            <tr class="alert alert-dark">
+                <th>Title of activity</th>
+                <th>Team leader</th>
+                <th>Duration</th>
+                <th>List of collaborators</th>
+                <th>Is finished</th>
+            </tr>
+            <tr class="alert alert-primary">
+                <td>{{ item.job.capitalize() }}</td>
+                <td>{{ users[item.team_leader]}}</td>
+                <td>{{ item.work_size}}</td>
+                <td>{{ item.collaborators}}</td>
+                {% if item.is_finished %}
+                    <td class="alert alert-success">Is finished</td>
+                {% else %}
+                    <td class="alert alert-danger">Is not finished</td>
+                {% endif %}
+            </tr>
+        </table>
+
+    {% endfor %}
+{% endblock %}

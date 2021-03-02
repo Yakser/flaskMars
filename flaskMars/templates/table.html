@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% set room = "Каюта №" %}
+{% block content %}
+    <h2>Оформление каюты</h2>
+    {% set img_src = 'old.jpg' %}
+    {% if sex == 'female' %}
+        {% set color = 'red' %}
+        {% if age < 21 %}
+            {% set img_src = 'kid.jpg' %}
+            {% set color = 'lightcoral' %}
+        {% endif %}
+    {% else %}
+        {% set color = 'blue' %}
+        {% if age < 21 %}
+            {% set img_src = 'kid.jpg' %}
+            {% set color = 'lightblue' %}
+        {% endif %}
+    {% endif %}
+    <table>
+        <tr>
+            <th>Эмблема</th>
+            <th>Цвет стен</th>
+        </tr>
+        <tr>
+            <td><img src="../../static/img/{{ img_src }}" alt=""></td>
+            <td style="background-color: {{ color }}"></td>
+        </tr>
+    </table>
+{% endblock %}

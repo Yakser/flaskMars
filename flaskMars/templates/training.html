@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if 'инженер' in prof or 'строитель' in prof %}
+        <h2>Инженерные тренажеры</h2>
+        <img src="{{ url_for('static', filename='img/sci.jpg') }}" alt="">
+    {% else %}
+        <h2>Научные симуляторы</h2>
+        <img src="{{ url_for('static', filename='img/eng.jpg') }}" alt="">
+    {% endif %}
+{% endblock %}

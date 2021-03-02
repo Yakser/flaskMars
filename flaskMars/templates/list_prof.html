@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if list_type == 'ul' %}
+         <ul>
+            {% for prof in prof_list %}
+                <li>{{ prof.capitalize() }}</li>
+            {% endfor %}
+         </ul>
+    {% elif list_type == 'ol'%}
+        <ol>
+            {% for prof in prof_list %}
+                <li>{{ prof.capitalize() }}</li>
+            {% endfor %}
+         </ol>
+        {% else %}
+        <p>Неверный тип списка!</p>
+    {% endif %}
+{% endblock %}
